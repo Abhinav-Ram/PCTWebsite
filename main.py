@@ -41,4 +41,4 @@ def display_cards(category, subcategory):
     return render_template('cards.html', pagetitle=f"{category.capitalize()} {subcategory.capitalize()}", data=page_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
