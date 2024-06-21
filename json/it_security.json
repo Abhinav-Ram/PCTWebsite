@@ -1,0 +1,49 @@
+{
+    "it_security": {
+        "solutions": [
+            {
+                "name": "Secure Access Secure Edge (SASE)",
+                "details": "Leverage the power of Software Defined WAN to securely authorize and authenticate to connect users, systems and endpoint devices to application and data anywhere it is present cloud or on-premises. SD-WAN, Secure Web Gateway, CASB, ZTNA and NGFW as a service.",
+                "id": "secureaccesssecureedgesase"
+            },
+            {
+                "name": "Extended Detection and Response (XDR)",
+                "details": "Integrated approach to correlate data across multiple layers of security starting right from endpoint to network. EDR, NTA, Email Security, IAM, Cloud Security.",
+                "id": "extendeddetectionandresponsexdr"
+            },
+            {
+                "name": "Security Incident and Event Management (SIEM)",
+                "details": "Modern hybrid IT infrastructure has increased the cyber attack surface hence there is considerable increase in multiple point solutions for detection and prevention which has in-turn made the events coming out of those solutions noisy and difficult to pick the right incidents which are true. Our team can consult and implement SIEM solution strategically picked right from industry standard products to open source tools and customized & curated helps organization to collect log events from heterogenous point solutions, correlate events, analyze and rightly detects incidents that needs response eliminating false positives would help the security team of the organization to rightly respond and ensure compliance of maintaining the log events for a specific period for event trails are also enabled.",
+                "id": "securityincidentandeventmanagementsiem"
+            },
+            {
+                "name": "Security Orchestration Automation Response (SOAR)",
+                "details": "While SIEM's capability stops at detection of incidents and anomalies, there is a need for strong and robust response mechanism to the security incidents. Integrating the right SOAR product and solutions to the SIEM tool can make things easier and efficient to respond to incidents as it can also automate and orchestrate workflows with multiple upstream security tools and products to ensure the policies and configurations are quickly updated or changed to mitigate the incident. The SOAR tool can also be configured to inform the right stakeholders for responses and can also maintain the lifecycle of the incident to ensure compliance goals are met.",
+                "id": "securityorchestrationautomationresponsesoar"
+            },
+            {
+                "name": "Data Loss Prevention (DLP)",
+                "details": "Protect loss or leakage of priceless data which is sensitive to your organization with state of the art DLP solutions which classify information assets based on the confidentiality and its merits and ensure the access and sharing of data is governed and controlled at all the layers of the landscape that includes Endpoint, Network, and Cloud. We can help meet industry standard regulations and uphold compliance by choosing and implementing the right DLP solution that can best fit the security policy and data classification policy of the organization.",
+                "id": "datalosspreventiondlp"
+            },
+            {
+                "name": "Next Generation Firewall (NGFW)",
+                "details": "Traditional firewalls with just packet filtering, stateful inspection, lack of application and advanced threat protection have already become history in the perimeter level security technology. With partnership and expertise in various enterprise NGFW products available in the market, we can pick and choose the right firewall to best suit the organization's business which falls in line with the security requirements of the organization. Firewall—Application Aware protection—VPN—IPS—DPI—Advanced Threat Protection (ATP)—Web and Content Filtering—SDWAN—QoS—Logging and Reporting.",
+                "id": "nextgenerationfirewallngfw"
+            }
+        ],
+        "services": [
+            {
+                "name": "Vulnerability Assessment & Penetration Testing (VAPT) as a Service",
+                "details": "Our cyber security team helps organizations to perform in-depth assessments to identify vulnerabilities in the network assets, and quantify and prioritize the vulnerabilities and give recommendations to mitigate the same. We use multiple automated tools to perform the Vulnerability Assessment and we give a summarized report for the IT team mitigation of those vulnerabilities. Our team is also equipped with expertise to wear different hats from an ethical hacker perspective and use automated and manual techniques to plan, recon, exploit and hold access to the application and information systems and penetrate the length and breadth of the network in an organization. Web App PenTest—Network PT—Firewall Audit—Server VA—Endpoint VA.",
+                "id": "vulnerabilityassessmentpenetrationtestingvaptasaservice"
+            },
+            {
+                "name": "Security Device Management",
+                "details": "Our 24/7 team with knowledge of multiple security devices and technologies can deploy, monitor, manage, and report detailed with configuration changes. * Firewall Management * IPS/IDS Management * End User Security Management * VPN Management * Email Security Management * Web Application Security. We ensure Optimal performance and upkeep of compliance by maintaining service levels to ensure the 360-degree security landscape.",
+                "id": "securitydevicemanagement"
+            }
+        ]
+        
+    }
+}

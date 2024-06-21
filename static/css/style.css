@@ -1,0 +1,108 @@
+:root {
+    --pctpurple: #700059;
+    --pctlightpurple: #a55878;
+    --yay: #4a90e2;
+    --yeah: #f39c12;
+    --wow: #27ae60;
+    --ohno: #e74c3c;
+    --bruh: #95a5a6;
+
+}
+
+.pctcolor {
+    color: var(--pctpurple);
+}
+
+.pctbackcolor {
+    background-color: var(--pctpurple);
+}
+
+
+.pctlightcolor {
+    color: var(--pctlightpurple);
+}
+
+.pctlightbackcolor {
+    background-color: var(--pctlightpurple);
+}
+
+/*Status colors*/
+.FUNNEL {
+    background-color: var(--yay);
+    /* Blue */
+    color: white;
+    padding: 3px;
+    text-decoration-thickness: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.COMMIT {
+    background-color: var(--yeah);
+    /* Orange */
+    color: white;
+    padding: 3px;
+    text-decoration-thickness: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ORDER.WON {
+    background-color: var(--wow);
+    /* Green */
+    color: white;
+    padding: 3px;
+    text-decoration-thickness: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.PROJECT.INITIATED {
+    background-color: var(--wow);
+    /* Green */
+    color: white;
+    padding: 3px;
+    text-decoration-thickness: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ORDER.LOST {
+    background-color: var(--wow);
+    /* Red */
+    color: white;
+    padding: 3px;
+    text-decoration-thickness: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.QUOTE.NOT.SENT {
+    background-color: var(--bruh);
+    /* Gray */
+    color: white;
+    padding: 3px;
+    text-decoration-thickness: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.funnel {
+    color: var(--yay)
+}
+
+.commit {
+    color: var(--yeah)
+}
+
+.order.won {
+    color: var(--wow)
+}
+
+.order.lost {
+    color: var(--ohno)
+}
+
+.quote.not.sent {
+    color: var(--bruh);
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Purple Cube Technologies Pvt. Ltd.{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <!-- Hero section content -->
+    <div class="hero min-h-screen" style="background-image: url(https://cdn.vectorstock.com/i/500p/39/11/programming-and-software-development-web-page-vector-30433911.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold text-slate-300">Infrastructure and Security Solutions</h1>
+            <p class="mb-5 text-slate-300">Our cutting-edge IT infrastructure and security solutions
+                empower your business to thrive in the digital age. Leverage
+                our expertise to build a robust, scalable, and secure
+                technology foundation that drives innovation and growth.</p>
+            <a href="{{ url_for('about') }}" class="btn pctbackcolor text-slate-300">Get Started</a>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+{% endblock %}

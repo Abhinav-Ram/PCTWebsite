@@ -1,0 +1,27 @@
+{
+    "cloud": {
+        "solutions": [],
+        "services": [
+            {
+                "name": "AWS & Azure",
+                "details": "Our expertise in the IT infrastructure right from the on-premises data center has made our cloud journey more relatable as we can clearly understand build a solution on the cloud be it AWS or Azure to an organization's cloud migration journey and projects. We also offer cloud managed services right from assessment of the cloud to managing the day to day operations of the cloud infrastructure to ensure secure, scalable, reliable, and efficient cloud environment aligned to the business need. Green field Cloud projects—Infra Management—Security Management—Cost Optimization—24X7 maintenance and Technical support.",
+                "id": "awsazure"
+            },
+            {
+                "name": "M365",
+                "details": "Being a Microsoft partner we resell M365 suite of products and provide managed services to ensure the Email, Security, and collaboration services are setup with industry standard best practices. Plan, Migrate, and Deploy Email, documents and related data to M365 Cloud. Provide User Management, 24X7 support for user requests. Ensure Security and Compliance is setup towards achieving the email security policy of the organization. Professional services to configure In-Tune organization-wide mobile device management. Just in time addition of users and deprovisioning users to reallocate licenses. Partner Billing support.",
+                "id": "m365"
+            },
+            {
+                "name": "Private Cloud",
+                "details": "Partnered with a Tier 4 Data Center in India we would be able to provide customers with end to end Private infrastructure with complete management access to the customer. We can setup the infrastructure typically the way it is setup on premises. We would also be able to provide co-location of the IT Hardware, Server and Compute in the same data center. Private Cloud—Co location—backup—DR",
+                "id": "privatecloud"
+            },
+            {
+                "name": "AI/ML - As a Service",
+                "details": "With strategic partner alignment with an AI/ML platform product team we enable enterprises to quickly make their AI/ML initiatives go live. Our platform abstracts Infrastructure, Data, and Data Scientists which enables to achieve the objectives at scale with security. Our platforms support intelligence for business users in terms of GEN AI capabilities and Data science projects. AI/ML—Gen AI—RAG—AI infrastructure",
+                "id": "aimlasservice"
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "it_infrastructure": {
+        "solutions": [
+            {
+                "name": "Servers, Storage, and Virtualization",
+                "details": "Optimize compute resource and increase availability of the applications and data by leveraging the power of SAN, Hypervisor and Compute",
+                "id": "serversstorageandvirtualization"
+            },
+            {
+                "name": "Backup and Recovery",
+                "details": "Aligned to the business continuity plan of the organization our backup and recover solutions would be a perfect fit to ensure RPO and RTO are maintained in case of disasters",
+                "id": "backupandrecovery"
+            },
+            {
+                "name": "Hyper Converged Infrastructure(HCI)",
+                "details": "While hypervisors pave way for availability and optimization of compute resources, HCI's powerful virtual storage and networking technology increases the power to scale out and makes the management simplified with single pane of glass",
+                "id": "hyperconvergedinfrastructurehci"
+            },
+            {
+                "name": "Datacenter Networking",
+                "details": "Structure Cabling with Fiber Optics and CAT6A Power and Cooling Solutions, Top of the Rack Switches, core switches and Routers, WAN aggregators and Load Balancers",
+                "id": "datacenternetworking"
+            }
+            
+        ],
+        "services": [
+            {
+                "name": "IT FMS",
+                "details": "PCT's IT FMS services is focused on placing experienced IT work force to ensure various sections of your IT infrastructure is up and running 24/7. Our On-Site Engineers are trained in both technical and process periodically to provide effective service delivery adhering to customers' Service levels. Our backend expertise would be extended to our on-site engineers to even remotely manage any kind of escalation calls. We don't merely send manpower; we ensure the resource performs up to the expectations of the customer by periodic performance evaluation * Off load HR Statutory * Increase Core business focus * Increased IT Service Levels * Decrease Cost",
+                "id": "itfms"
+            },
+            {
+                "name": "End User Compute Management",
+                "details": "Ever since the Cloud has taken a large surface area on the IT landscape right from application to platforms to infrastructure, the work from anywhere and any device has become the new normal. This indeed has made End user device management very critical to any organization and ensuring a complete lifecycle of onboarding to offboarding of a user in the multi-device options the user possess. Also, provisioning what needs to be accessed right from day one to deprovisioning any access just in time has also become very critical. Protecting the end user device from the various attack surfaces and training and awareness tops the list in the end user devices is a mission critical to uphold security posture. We offer service right from Procurement, Asset Management, on-boarding, patching, updates, securing the devices. MDM—EDR—MDR—DLP—Patch Management—Remote Management—Security and Compliance",
+                "id": "endusercomputemanagement"
+            },
+            {
+                "name": "Network Monitoring and Management",
+                "details": "With Expertise in multi device support we provide 24X7 monitoring and management of the network devices by either leveraging the monitoring tool and service management tools of the customer to ensure the performance and availability of the network meets the demand of the SLA of the organization or we can setup industry standard enterprise tool / open source tools as a managed service and offer the service",
+                "id": "networkmonitoringandmanagement"
+            },
+            {
+                "name": "Server Management",
+                "details": "Provide helpdesk along with SME support to deploy and manage the server infrastructure of any organization. * Server Hardware Maintenance and Management (AMC) * Windows Server - Active Directory—DNS-DHCP * Linux Server Management * Backup Server Management",
+                "id": "servermanagement"
+            }
+        ]
+        
+    }
+}

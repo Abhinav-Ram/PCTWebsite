@@ -1,0 +1,28 @@
+{
+    "about": {
+        "mission": "Adopt innovative technologies tailored to the business requirement that would ensure scalability and investment protection, adhere to industry standard practices for ensuring quality delivery, timely delivery in each assignment we undertake irrespective of the size of the assignment.",
+        "vision": "To grow as a most trusted organization setting high standards in business practices and Service delivery & Assurance.",
+        "whywefamous": [
+            {
+                "name": "Innovative Solutions",
+                "value": "Leverage cutting-edge technologies to drive business transformation;",
+                "id": "innovativesolutions"
+            },
+            {
+                "name": "Dedicated Support",
+                "value": "Rely on our team of experts to provide personalized attention and 24/7 support;",
+                "id": "dedicatedsupport"
+            },
+            {
+                "name": "Cost-Effective Approach",
+                "value": "Our solutions are designed to maximize your return on investment;",
+                "id": "costeffectiveapproach"
+            },
+            {
+                "name": "Unparalleled Expertise",
+                "value": "Benefit from our team's deep industry knowledge and technical proficiency.",
+                "id": "unparalleledexpertise"
+            }
+        ]
+    }
+}
