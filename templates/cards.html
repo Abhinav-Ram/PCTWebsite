@@ -9,8 +9,8 @@
         {% for card in data %}
         <div class="card w-96 pctlightbackcolor pctcolor shadow-xl">
             <div class="card-body">
-                <h2 class="card-title">{{ card.name }}</h2>
-                <p>{{ summary(card.details) }}</p>
+                <h2 class="text-black card-title">{{ card.name }}</h2>
+                <p class="text-black text-justify">{{ summary(card.details) }}</p>
                 <button 
                     class="btn pctbackcolor read-more" 
                     data-modal="{{ card.id }}" 
