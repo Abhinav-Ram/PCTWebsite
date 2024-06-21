@@ -14,8 +14,6 @@ def summary(content, length=100):
         return content
     return content[:length] + '...'
 
-
-
 @app.context_processor
 def inject_context_data():
     return {'contact_url': 'https://forms.gle/FZHA8tXyg3uN8BxT6'}
