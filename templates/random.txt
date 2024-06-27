@@ -1,0 +1,30 @@
+    <!-- cards.html -->
+    {% extends 'base.html' %}
+
+    {% block title %}{{ pagetitle }} - Purple Cube Technologies Pvt. Ltd.{% endblock %}
+
+    {% block content %}
+    <div class="m-auto">
+        <div class="p-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {% for card in data %}
+            <div class="flex justify-center">
+                <div class="card w-96 pctlightbackcolor pctcolor shadow-xl">
+                    <div class="card-body">
+                        <h2 class="text-black card-title">{{ card.name }}</h2>
+                        <p class="text-black text-justify">{{ summary(card.details) }}</p>
+                        <button 
+                            class="btn pctbackcolor read-more" 
+                            data-modal="{{ card.id }}" 
+                            data-card='{"id": "{{ card.id }}", "name": "{{ card.name }}", "details": "{{ card.details }}"}'
+                        >
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    {% endblock %}
