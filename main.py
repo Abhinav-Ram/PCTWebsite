@@ -38,7 +38,7 @@ def about():
 def display_cards(category, subcategory):
     data = load_json(f'{category}.json')
     page_data = data.get(category, {}).get(subcategory, [])
-    return render_template('cards.html', pagetitle=f"{category.capitalize()} {subcategory.capitalize()}", data=page_data)
+    return render_template('cards.html', pagetitle=f"{category.capitalize()} {subcategory.capitalize()}", data=page_data, category=category, subcategory=subcategory)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
