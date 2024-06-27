@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='media/pctlogodetailed.png') }}">
-  
 </head>
 <body>
     <header class="navbar bg-fuchsia-900 bg-opacity-60 backdrop-blur-lg shadow-lg w-full fixed z-50">
@@ -17,7 +16,7 @@
             <div class="flex-1">
                 <a href="{{ url_for('home') }}" class="btn btn-ghost text-xl"><img src="{{ url_for('static', filename='media/pctlogodetailed.png') }}" class="h-5/6 w-5/6" alt="PCT Logo Detailed" srcset=""></a>
             </div>
-            <div class="flex-none font-bold">
+            <div class="flex-none font-bold hidden md:block">
                 <ul class="menu menu-horizontal px-1">
                     <li><a href="{{ url_for('about') }}">About us</a></li>
                     <li><a target="_blank" href="{{ contact_url }}">Contact</a></li>
@@ -46,58 +45,94 @@
                     </li>
                 </ul>
             </div>
+            <div class="flex-none md:hidden relative z-10">
+                <!-- Burger menu icon -->
+                <button id="burgerMenu" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
     </header>
 
-
-<!-- SPECIAL POPUP CARD -->
-<div id="specialCardModal" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50 hidden">
-    <div class="bg-white rounded-lg p-8 shadow-xl max-w-4xl w-full overflow-y-auto max-h-[80vh]">
-        <h2 id="specialCardName" class="text-black text-2xl font-bold mb-4"></h2>
-        <div class="flex flex-col md:flex-row">
-            <!-- Image floated left -->
-            <img id="specialCardImage" src="https://t4.ftcdn.net/jpg/05/88/02/09/360_F_588020909_dPO6ZSbe5k3pQ8MZqut4drZWpiOM6Kbz.jpg" alt="Special Card Image" class="float-left w-1/3 md:mr-4 mb-4 md:mb-2 rounded-lg">
-            <!-- Paragraph text -->
-            <p id="specialCardText" class="text-black text-justify">
-                <!-- This paragraph will have text wrapped around the image -->
-            </p>
-        </div>
-        <!-- Additional paragraph with message and links -->
-        <p class="italic text-black mt-4 text-justify">
-            For more information, please <a class="link" href="mailto:info@purplecubetech.com" target="_blank">email us</a> or submit a query in this <a class="link"  href="{{ contact_url }}" target="_blank">Google form</a>.
-        </p>
-        <button id="closeSpecialCardModal" class="text-slate-300 btn mt-4">Close</button>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="mobile-menu absolute top-16 left-0 w-full h-full bg-black bg-opacity-80 hidden z-20">
+        <ul class="menu p-4">
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+            <li><a target="_blank" href="{{ contact_url }}">Contact</a></li>
+            <li><a href="{{ url_for('display_cards', category='cloud', subcategory='services') }}">Cloud</a></li>
+            <li>
+                <details>
+                    <summary>
+                        IT Infrastructure
+                    </summary>
+                    <ul class="p-2 bg-base-100 rounded-t-none">
+                        <li><a href="{{ url_for('display_cards', category='it_infrastructure', subcategory='solutions') }}">Solutions</a></li>
+                        <li><a href="{{ url_for('display_cards', category='it_infrastructure', subcategory='services') }}">Services</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>
+                        IT Security
+                    </summary>
+                    <ul class="p-2 bg-base-100 rounded-t-none">
+                        <li><a href="{{ url_for('display_cards', category='it_security', subcategory='solutions') }}">Solutions</a></li>
+                        <li><a href="{{ url_for('display_cards', category='it_security', subcategory='services') }}">Services</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </div>
-</div>
 
+    <!-- SPECIAL POPUP CARD -->
+    <div id="specialCardModal" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50 hidden">
+        <div class="bg-white rounded-lg p-8 shadow-xl max-w-4xl w-full overflow-y-auto max-h-[80vh]">
+            <h2 id="specialCardName" class="text-black text-2xl font-bold mb-4"></h2>
+            <div class="flex flex-col md:flex-row">
+                <!-- Image floated left -->
+                <img id="specialCardImage" src="https://t4.ftcdn.net/jpg/05/88/02/09/360_F_588020909_dPO6ZSbe5k3pQ8MZqut4drZWpiOM6Kbz.jpg" alt="Special Card Image" class="float-left w-1/3 md:mr-4 mb-4 md:mb-2 rounded-lg">
+                <!-- Paragraph text -->
+                <p id="specialCardText" class="text-black text-justify">
+                    <!-- This paragraph will have text wrapped around the image -->
+                </p>
+            </div>
+            <!-- Additional paragraph with message and links -->
+            <p class="italic text-black mt-4 text-justify">
+                For more information, please <a class="link" href="mailto:info@purplecubetech.com" target="_blank">email us</a> or submit a query in this <a class="link"  href="{{ contact_url }}" target="_blank">Google form</a>.
+            </p>
+            <button id="closeSpecialCardModal" class="text-slate-300 btn mt-4">Close</button>
+        </div>
+    </div>
 
-
-
-
-    
     <section>
         <div class="pt-16">
-        <div class="content bg-slate-300">
-            {% block content %}{% endblock %}
-        </div>    
-    </div>
+            <div class="content bg-slate-300">
+                {% block content %}{% endblock %}
+            </div>    
+        </div>
     </section>
-  
+
     <footer class="footer p-10 pctbackcolor text-neutral-content">
         <aside>
-          <img src="{{ url_for('static', filename='media/pctlogodetailed.png') }}" class="w-1/2" alt="Footer Logo">
-          <p>Purple Cube Technologies Pvt. Ltd.<br>Vibrantly Thinking our of the box...</p>
+            <img src="{{ url_for('static', filename='media/pctlogodetailed.png') }}" class="w-1/2" alt="Footer Logo">
+            <p>Purple Cube Technologies Pvt. Ltd.<br>Vibrantly Thinking our of the box...</p>
         </aside> 
         <nav>
-          <h6 class="footer-title">Follow us</h6> 
-          <div class="grid grid-flow-col gap-4">
-            <a target="_blank" href="mailto:info@purplecubetech.com" class="text-2xl"><i class="fa-solid fa-envelope"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/company/purplecube-technologies-pvt-ltd/" class="text-2xl"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" class="text-2xl"><i class="fab fa-facebook"></i></a>
-
-          </div>
+            <h6 class="footer-title">Follow us</h6> 
+            <div class="grid grid-flow-col gap-4">
+                <a target="_blank" href="mailto:info@purplecubetech.com" class="text-2xl"><i class="fa-solid fa-envelope"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/purplecube-technologies-pvt-ltd/" class="text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
+            </div>
         </nav>
-      </footer>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </footer>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('burgerMenu').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
